@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
-	<meta http-equiv= "Content-Type" context="text/html; charset=gb2312" />
+	<meta http-equiv= "Content-Type" context="text/html; charset=utf-8" />
 	<meta content="width=device-width, initial-scale=1.0" name="viewport">
-	<title>�㶫��Ǻ���</title>
+	<title>广东羊城航空</title>
 	<link rel="stylesheet" href="css/layout.css">
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<style type="text/css">
@@ -16,6 +16,9 @@
 		}
 	</style>
 	<link rel="stylesheet" href="css/bootstrap-responsive.css">
+	<!--[if lt IE 9]>
+　　　　<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+　　<![endif]-->
     </head>
     <body>
 	<div class="navbar navbar-inverse navbar-fixed-top">
@@ -26,29 +29,27 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 				</a>
-				<a class="brand" href="#" title="�㶫��Ǻ���">�㶫��Ǻ���</a>
+				<a class="brand" href="index.html" title="广东羊城航空">广东羊城航空</a>
 				<div class="nav-collapse collapse">
 				<ul class="nav">
-					<li class="active">
-					<a href="#">��ҳ</a>
+					<li  class="active">
+						<a href="index.html">首页</a>
 					</li>
 					<li>
-					<a href="#">Ԥ������</a>
+						<a href="reservationManage.html">预定管理</a>
 					</li>
 					<li>
-					<a href="#">���ද̬</a>
+						<a href="flightTrend.html">航班动态</a>
 					</li>
 					<li>
-					<a href="#">��λԤ��</a>
+						<a href="seatReservation.html">座位预定</a>
+					</li>
+					<li>													
+						<a data-toggle="modal" href="#logIn"  data-keyboard="true" data-backdrop="true">登录</a>
 					</li>
 					<li>
-					<a href="#">��ǻ�Ա</a>
+						<a data-toggle="modal" href="#signUp"  data-keyboard="true" data-backdrop="true">注册</a>
 					</li>
-					<form class="navbar-form pull-right">
-					<input class="span2" type="text" placeholder="Email">
-					<input class="span2" type="password" placeholder="Password">
-					<button class="btn" type="submit">Sign in</button>
-					</form>
 				</div>
 			</div>
 		</div>
@@ -57,18 +58,113 @@
 		<div class="mainbox">
 		<div class="tabbable">
 			<ul class="nav nav-pills">
-				<li class="active"><a href="#tab1" data-toggle="tab">��ƱԤ��</a></li>
-				<li><a href="#tab2" data-toggle="tab">�����ǻ�</a></li>
+				<li class="active"><a href="#tab1" data-toggle="tab">机票预订</a></li>
+				<li><a href="#tab2" data-toggle="tab">办理登机</a></li>
 			</ul>
 			<div class="tab-content">
 				<div class="tab-pane active" id="tab1">
 					<form class="form-inline">
-						<input type="radio" name="optionsRadios" id="optionRadios1" value="option1" checked><span class="help-inline">����</span>
-						<input type="radio" name="optionsRadios" id="optionRadios2" value="option2"><span class="help-inline">���س�</span>
+						<label><input type="radio" name="optionsRadios" id="optionRadios1" value="option1" checked>单程</label>
+						<label><input type="radio" name="optionsRadios" id="optionRadios2" value="option2">来回程</label>
 					</form>
+          <form class="left form">
+            <label>出发城市</label>
+            <input type="text" class="input-small" placeholder="全拼/简拼/汉字">
+          </form>
+          <form class="right form">
+            <label>到达城市</label>
+            <input type="text" class="input-small" placeholder="全拼/简拼/汉字">
+          </form>
+          <form class="left form">
+            <label>出发日期</label>
+            <input type="text" class="input-small" placeholder="全拼/简拼/汉字">
+          </form>
+          <form class="right form" id="return" style="display: none;">
+            <label>回程日期</label>
+            <input type="text" class="input-small" placeholder="全拼/简拼/汉字">
+          </form>
+          <table class="table">
+            <thead>
+              <tr>
+                <th>成人(≥12)</th>
+                <th>儿童(2-12)</th>
+                <th>婴儿(< 2)</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <select class="span1">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </td>
+                <td>
+                  <select class="span1">
+                    <option>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </td>
+                <td>
+                  <select class="span1">
+                    <option>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </td>
+                <td>
+                  <p>
+                    <button class="btn btn-primary" type="button" onclick="window.location.href='searchResult.html'">立即查询</button>
+                  </p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
 				</div>
 				<div class="tab-pane" id="tab2">
-					<p>I'm in Section 2.</p>
+					<form class="form-inline">
+						<label><input type="radio" name="RadioGroup" id="Radios1" checked>证件号登录</span></label>
+						<label><input type="radio" name="RadioGroup" id="Radios2" >明珠俱乐部会员 </span></label>
+						<label><input type="radio" name="RadioGroup" id="Radios3" >票号登录</label>
+					</form>
+          <div class="infobox" id="zhengjian">
+            <label>证件号码<input id="ID" class="boxes" type="text"></label>
+            <label>航班号码<input id="ID" class="boxes" type="text"></label>
+            <label>联系手机<input id="ID" class="boxes" type="text"></label>
+          </div>
+          <div class="infobox" id="pearl" style="display: none;">
+            <label>明珠卡号<input id="ID" class="boxes" type="text"></label>
+            <label>明珠密码<input id="ID" class="boxes" type="text"></label>
+            <label>联系手机<input id="ID" class="boxes" type="text"></label>
+          </div>
+          <div class="infobox" id="ticket" style="display: none;">
+            <label>旅客姓名<input id="ID" class="boxes" type="text"></label>
+            <label>机票号码<input id="ID" class="boxes" type="text"></label>
+            <label>联系手机<input id="ID" class="boxes" type="text"></label>
+          </div>
+          <div class="lianji">
+            <label>始发城市
+	            <select class="span3">
+	              <option>国内</option>
+	              <option>国际/地区/两岸航线</option>
+	            </select>
+            </label>
+          </div>
+          <p class="lianji">
+            <button class="btn btn-primary" type="button">办理登机牌</button>
+            <button class="btn btn-success" type="button">取消登机牌</button>
+          </p>
 				</div>
 			</div>
 		</div>
@@ -78,29 +174,29 @@
 					<div class="item active">
 						<img alt="" src="ad/0.jpg">
 						<div class="carousel-caption">
-							<h4>���Ϻ�A280 ������ɼ��</h4>
+							<h4>乘南航A280 畅游洛杉矶</h4>
 						</div>
 					</div>
 					<div class="item">
 						<img alt="" src="ad/1.jpg">
 						<div class="carousel-caption">
-							<h4>�Ϻ�ͷ�Ȳ����鼾</h4>
+							<h4>南航头等舱体验季</h4>
 						</div>
 					</div>
 					<div class="item">
 						<img alt="" src="ad/2.jpg">
 						<div class="carousel-caption">
-							<h4>����֮·</h4>
+							<h4>广州之路</h4>
 						</div>
 					</div>
 					<div class="item">
 						<img alt="" src="ad/3.jpg">
 						<div class="carousel-caption">
-							<h4>��ת���� �����е�</h4>
+							<h4>玩转国庆 享乐有道</h4>
 						</div>
 					</div>
 				</div>
-				<!-- �����ַ���ת���ַ���鿴  http://114.xixik.com/character/ -->
+				<!-- 特殊字符和转义字符请查看  http://114.xixik.com/character/ -->
 				<a class="left carousel-control" data-slide="prev" href="#myCarousel">&lsaquo;</a>
 				<a class="right carousel-control" data-slide="next" href="#myCarousel">&rsaquo;</a>
 			</div>
@@ -110,9 +206,81 @@
 		    <footer>
 			<p>&#169 Company 2012</p>
 		    </footer>
+		    <!-- log in -->
+			<div class="modal hide fade in" id="logIn">
+				<div class="modal-header">
+					<a class="close" data-dismiss="modal">×</a>
+					<h3>登录</h3>
+				</div>
+				<div class="modal-body">
+					<form class="form-horizontal">
+						<fieldset>
+							<div class="control-group">
+								<label class="control-label" for="input01">用户名</label>
+								<div class="controls">
+									<input id="input01" type="text" name="" placeholder="用户名">
+								</div>
+							</div>
+							<div class="control-group">
+								<label class="control-label" for="input01">密码</label>
+								<div class="controls">
+									<input id="input01" type="password" name="" placeholder="密码">
+								</div>
+							</div>
+							<div class="control-group">
+								<div class="controls">
+									<button class="btn btn-primary" type="submit">登录</button>
+								</div>
+							</div>
+						</fieldset>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<a href="#" class="btn" data-dismiss="modal">取消</a>
+				</div>
+			</div>
+			<!-- Sign Up -->
+			<div class="modal hide fade in" id="signUp">
+				<div class="modal-header">
+					<a class="close" data-dismiss="modal">×</a>
+					<h3>注册</h3>
+				</div>
+				<div class="modal-body">
+					<form class="form-horizontal">
+						<fieldset>
+							<div class="control-group">
+								<label class="control-label" for="input01">用户名</label>
+								<div class="controls">
+									<input id="input01" type="text" name="" placeholder="用户名">
+								</div>
+							</div>
+							<div class="control-group">
+								<label class="control-label" for="input01">手机号码</label>
+								<div class="controls">
+									<input id="input01" type="password" name="" placeholder="手机号码">
+								</div>
+							</div>
+							<div class="control-group">
+								<label class="control-label" for="input01">密码</label>
+								<div class="controls">
+									<input id="input01" type="password" name="" placeholder="密码">
+								</div>
+							</div>
+							<div class="control-group">
+								<div class="controls">
+									<button class="btn btn-primary" type="submit">注册</button>
+								</div>
+							</div>
+						</fieldset>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<a href="#" class="btn" data-dismiss="modal">取消</a>
+				</div>
+			</div>
 	</div>
 	    <script src="js/jquery-1.7.2.js"></script>
-	    <script src="js/bootstrap.js"></script>
-	    <script src="js/bootstrap-min.js"></script>
+      	<script src="js/index.js"></script>
+	    <script src="js/bootstrap.min.js"></script>
     </body>
 </html>

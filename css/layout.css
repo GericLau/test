@@ -8,6 +8,9 @@
 	height: 298px;
 	width: 373px;
 }
+.tab-content {
+  font-size: 12px;
+}
 .showbox {
 	float: right;
 	height: 300px;
@@ -19,4 +22,104 @@
 }
 .nav.nav-pills {
 	background: none repeat scroll 0 0 #BFD6E8;
+}
+.form-inline {
+  padding-left: 20px;
+}
+.left.form {
+  float: left;
+  padding-left: 20px;
+  margin: 0 0 0 0;
+}
+.right.form {
+  float: left;
+  padding: 0 0 0 50px;
+  margin: 0 0 0 0;
+}
+.gruit1 {
+  border-top: 1px solid #F1F1F1;
+  height: 53px;
+  padding: 3px 0 0 20px;
+}
+.grid_6 {
+  height: 50px;
+}
+.grid_4 {
+  float: left;
+  width: 75px;
+}
+.table {
+  margin: 0 0 0 0;
+  width: 80%;
+}
+#ID {
+  margin: 5px 0 0 0;
+  padding: 0;
+}
+.infobox {
+  margin-left: 20px;
+  padding-top: 10px;
+  width: 265px;
+  height: 100px;
+}
+.lianji {
+  margin-left: 20px;
+  padding-top: 10px;
+}
+
+
+@media (min-width: 768px) and (max-width: 979px) {
+  .container.addition {
+    width: 100%;
+    padding: 0 5px 0 5px;
+  }
+  .tabbable {
+    border: 1px solid #BFD6E8;
+    float: left;
+    height: 298px;
+    width: 38%;
+  }
+  .showbox {
+    float: right;
+    height: 300px;
+    width: 59%;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .container.addition {
+    width: 100%;
+    padding: 0 5px 0 5px;
+  }
+  .tabbable {
+    border: 1px solid #BFD6E8;
+    float: left;
+    height: 298px;
+    width: 100%;
+  }
+  .showbox {
+    float: left;
+    clear: both;
+    height: 300px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 319px) {
+  .container.addition {
+    width: 100%;
+    padding: 0 5px 0 5px;
+  }
+  .tabbable {
+    border: 1px solid #BFD6E8;
+    float: left;
+    height: 298px;
+    width: 100%;
+  }
+  .showbox {
+    float: left;
+    clear: both;
+    height: 300px;
+    width: 100%;
+  }
 }
