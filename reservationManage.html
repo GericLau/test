@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<meta http-equiv= "Content-Type" context="text/html; charset=utf-8" />
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<title>广东羊城航空</title>
+	<link rel="stylesheet" href="css/layout.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<style type="text/css">
+		body {
+			padding-top: 60px;
+			padding-bottom: 40px;
+		}
+		.sidebar-nav {
+			padding: 9px 0;
+		}
+	</style>
+	<link rel="stylesheet" href="css/bootstrap-responsive.css">
+	<!--[if lt IE 9]>
+　　　　<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+　　<![endif]-->
+    </head>
+    <body>
+	<div class="navbar navbar-inverse navbar-fixed-top">
+	    <div class="navbar-inner">
+			<div class="container">
+			    <a class="btn btn-navbar collapsed" data-target=".nav-collapse" data-toggle="collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			    </a>
+			    <a class="brand" href="index.html" title="广东羊城航空">广东羊城航空</a>
+				    <div class="nav-collapse collapse">
+					<ul class="nav">
+					    <li>
+							<a href="index.html">首页</a>
+						</li>
+						<li  class="active">
+							<a href="reservationManage.html">预定管理</a>
+						</li>
+						<li>
+							<a href="flightTrend.html">航班动态</a>
+						</li>
+						<li>
+							<a href="seatReservation.html">座位预定</a>
+						</li>
+						<li>													
+							<a data-toggle="modal" href="#logIn"  data-keyboard="true" data-backdrop="true">登录</a>
+						</li>
+						<li>
+							<a data-toggle="modal" href="#signUp"  data-keyboard="true" data-backdrop="true">注册</a>
+						</li>
+					</div>
+			    </div>
+			</div>
+	    </div>
+	    <div class="container addition">
+		<div class="row-fluid">
+		    <div class="span3">
+			<div class="well sidebar-nav">
+			    <ul class="nav nav-list">
+				<li class="nav-header">快速链接</li>
+				<li class="active">
+				   <a href="#">机票预定</a>
+				</li>
+				<li>
+				   <a href="#">网上登机办理</a>
+				</li>
+				<li>
+				   <a href="#">客票检验</a>
+				</li>
+				<li>
+				   <a href="#">改退票</a>
+				</li>
+			    </ul>
+			</div>
+		    </div>
+		    <div class="span8">
+			<div class="row-fluid">
+			    <div class="span4">
+				<h2>机票预定</h2>
+				<p>您可快速查询南航国内国际航班和机票价格，在线预订单程、往返程、联程机票。</p>
+				<p class="btn" href="#">查看详情 &#187</p>
+			    </div>
+			    <div class="span4">
+				<h2>企业订票</h2>
+				<p>企业用户购票，享受更大幅度的直减优惠，购买越多，返利越丰富。</p>
+				<p class="btn" href="#">查看详情 &#187</p>
+			    </div>
+			</div>
+			<div class="row-fluid">
+			    <div class="span4">
+				<h2>改退票</h2>
+				<p>计划有变？您可选择退票或变更服务，部分机票视使用限制条件而定。</p>
+				<p class="btn" href="#">查看详情 &#187</p>
+			    </div>
+			    <div class="span4">
+				<h2>座位预定</h2>
+				<p>预订机票后，您可立即根据南航机舱动态座位在线预留，让旅程更舒心</p>
+				<p class="btn" href="#">查看详情 &#187</p>
+			    </div>
+			</div>
+		    </div>
+		</div>
+		    <hr>
+		    <footer>
+			<p>&#169 Company 2012</p>
+		    </footer>
+		    <!-- log in -->
+			<div class="modal hide fade in" id="logIn">
+				<div class="modal-header">
+					<a class="close" data-dismiss="modal">×</a>
+					<h3>登录</h3>
+				</div>
+				<div class="modal-body">
+					<form class="form-horizontal">
+						<fieldset>
+							<div class="control-group">
+								<label class="control-label" for="input01">用户名</label>
+								<div class="controls">
+									<input id="input01" type="text" name="" placeholder="用户名">
+								</div>
+							</div>
+							<div class="control-group">
+								<label class="control-label" for="input01">密码</label>
+								<div class="controls">
+									<input id="input01" type="password" name="" placeholder="密码">
+								</div>
+							</div>
+							<div class="control-group">
+								<div class="controls">
+									<button class="btn btn-primary" type="submit">登录</button>
+								</div>
+							</div>
+						</fieldset>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<a href="#" class="btn" data-dismiss="modal">取消</a>
+				</div>
+			</div>
+			<!-- Sign Up -->
+			<div class="modal hide fade in" id="signUp">
+				<div class="modal-header">
+					<a class="close" data-dismiss="modal">×</a>
+					<h3>注册</h3>
+				</div>
+				<div class="modal-body">
+					<form class="form-horizontal">
+						<fieldset>
+							<div class="control-group">
+								<label class="control-label" for="input01">用户名</label>
+								<div class="controls">
+									<input id="input01" type="text" name="" placeholder="用户名">
+								</div>
+							</div>
+							<div class="control-group">
+								<label class="control-label" for="input01">手机号码</label>
+								<div class="controls">
+									<input id="input01" type="password" name="" placeholder="手机号码">
+								</div>
+							</div>
+							<div class="control-group">
+								<label class="control-label" for="input01">密码</label>
+								<div class="controls">
+									<input id="input01" type="password" name="" placeholder="密码">
+								</div>
+							</div>
+							<div class="control-group">
+								<div class="controls">
+									<button class="btn btn-primary" type="submit">注册</button>
+								</div>
+							</div>
+						</fieldset>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<a href="#" class="btn" data-dismiss="modal">取消</a>
+				</div>
+			</div>
+			<!-- End sign up -->
+	    </div>
+	    <script src="js/jquery-1.7.2.js"></script>
+	    <script src="js/bootstrap.js"></script>
+	    <script src="js/bootstrap-min.js"></script>
+    </body>
+</html>

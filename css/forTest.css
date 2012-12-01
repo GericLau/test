@@ -1,0 +1,56 @@
+/* left part layout */
+#icontents {
+    width: 740px;
+    float: left;
+}
+#leftbox {
+    line-height: 24px;
+    margin: 15px 10px;
+}
+label {
+  display: inline;
+}
+ul {
+  list-style: none;
+  margin: 0;
+}
+.form-horizontal {
+    margin: 0 auto;
+}
+.infomation {
+    background: #BFD6E8;
+}
+/* right part layout */
+#rightbox {
+    width: 190px;
+    float: right;
+    border: 1px solid #BFD6E8;
+}
+.nav.nav-pills {
+    background: none repeat scroll 0 0 #BFD6FF;
+}
+.tab-content {
+    font-size: 12px;
+    padding: 15px 10px 15px 20px;
+    border-left: 1px solid #BFD6E8;
+    border-right: 1px solid #BFD6E8;
+}
+#tab1 .table td,#tab1 .table th,#tab2 .table td,#tab2 .table th{
+    padding: 0;
+    font-size: 12px;
+}
+#tab1 input,#tab2 input {
+    height: 15px;
+}
+#tab1 select, #tab2 select {
+  font-size: 10px;
+  text-align: left;
+  width: 48px;
+}
+.flightinx {
+  margin-bottom: 20px;
+}
+
+#footer {
+  clear: both;
+}
