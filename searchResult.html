@@ -69,7 +69,7 @@
 										    (单程)
 									    </span>
 								    </td>
-								    <td width="200">2012年12月01日</td>
+								    <td>2012年12月01日</td>
 								    <td>
 									    旅客人数: 成人x2
 									    儿童x1
@@ -117,7 +117,7 @@
 										    <div>
 											    <span class="rad">
 												    <input id="radio1" type="radio" value="1700" name="radio">
-                            <label> &#165 1700</label>
+                            <label> &#165; 1700</label>
 											    </span>
 										    </div>
 									    </td>
@@ -125,7 +125,7 @@
 										    <div>
 											    <span class="rad">
 												    <input id="radio2" type="radio" value="1600" name="radio" onclick="check(this.value)">
-												    <label> &#165 1600</label>
+												    <label> &#165; 1600</label>
 											    </span>
 										    </div>
 									    </td>
@@ -133,7 +133,7 @@
 										    <div>
 											    <span class="rad">
 												    <input id="radio3" type="radio" value="1500" name="radio" onclick="check(this.value)">
-												    <label> &#165 1500</label>
+												    <label> &#165; 1500</label>
 											    </span>
 										    </div>
 									    </td>
@@ -151,82 +151,83 @@
 							<caption><h4>单程</h4></caption>
 							<tbody>
 							    <tr class="infomation">
-								<td class="noxinf">
-								    <div class="shc">
-								    启程：
-								    <br>
-								    到达：
-								    <br>
-								    <div class="aline"></div>
-								    <span>餐食：有     经停：无</span>
-								    <br>
-								    <span>机场税：￥50</span>
-								    <span>燃油费：￥130（成人）</span>
-								    </div>
-								</td>
-								<td class="rightinfo">
-								<div class="sxprice">
-								    <div class="totalren">
-									<ul>
-									    <li>
-									    <span class="xt">2成人票价:</span>
-									    <span class="pj">
-										<span class="cr">0</span>
-										元
-									    </span>
-									    </li>
-									    <li>
-									    <span class="xt">1儿童票价:</span>
-									    <span class="pj">
-										<span class="cr">0</span>
-										元
-									    </span>
-									    </li>
-									    <li>
-									    <span class="xt">1婴儿票价:</span>
-									    <span class="pj">
-										<span class="cr">0</span>
-										元
-									    </span>
-									    </li>
-									</ul>
-								    </div>
-								    <div class="totalmn">
-									    <span class="xt">2成人+1儿童+1
-									    	婴儿乘客的总价:</span>
-									    <span class="pj redtype">
-										<span id="priceCount_id">0</span>元
-										</br>（以上总价已包含机场税及燃油费）
-									    </span>
-								    </div>
-								</td>
-								</div>
+									<td class="noxinf">
+									    <div class="shc">
+									    启程：
+									    <br>
+									    到达：
+									    <br>
+									    <div class="aline"></div>
+									    <span>餐食：有     经停：无</span>
+									    <br>
+									    <span>机场税：￥50</span>
+									    <span>燃油费：￥130（成人）</span>
+									    </div>
+									</td>
+									<td class="rightinfo">
+										<div class="sxprice">
+										    <div class="totalren">
+											<ul>
+											    <li>
+											    <span class="xt">2成人票价:</span>
+											    <span class="pj">
+												<span class="cr">0</span>
+												元
+											    </span>
+											    </li>
+											    <li>
+											    <span class="xt">1儿童票价:</span>
+											    <span class="pj">
+												<span class="cr">0</span>
+												元
+											    </span>
+											    </li>
+											    <li>
+											    <span class="xt">1婴儿票价:</span>
+											    <span class="pj">
+												<span class="cr">0</span>
+												元
+											    </span>
+											    </li>
+											</ul>
+										    </div>
+										    <div class="totalmn">
+											    <span class="xt">2成人+1儿童+1
+											    	婴儿乘客的总价:</span>
+											    <span class="pj redtype">
+													<span id="priceCount_id">0</span>元
+													<br>（以上总价已包含机场税及燃油费）
+											    </span>
+										    </div>
+										</div>
+									</td>								
 							    </tr>
 							</tbody>
 						    </table>
 						</div>
-					    </div>
-	 <form class="form-horizontal" action="bookingticket.action" method="post">
-				    <legend>会员购票</legend>
-				    <div class="control-group">
-					<label class="control-label">帐号名</label>
-					<div class="controls">
-					    <input type="text" placeholder="会员号" name="vip_name"></input>
 					</div>
-				    </div>
-				    <div class="control-group">
-					<label class="control-label">密码</label>
-					<div class="controls">
-					    <input type="password" name="vip_password"></input>
-					</div>
-				    </div>
-				    <div class="control-group">
-					<div class="controls">
-					    <button type="submit" class="btn">支付订票</button>
-					</div>
-				    </div>
-				    <input type="hidden" name=""/>
-			    </form>
+	 				<form class="form-horizontal" action="bookingticket.action" method="post">
+	 					<fieldset>
+						    <legend>会员购票</legend>
+						    <div class="control-group">
+							<label class="control-label">帐号名</label>
+							<div class="controls">
+							    <input type="text" placeholder="会员号" name="vip_name"/>
+							</div>
+						    </div>
+						    <div class="control-group">
+							<label class="control-label">密码</label>
+							<div class="controls">
+							    <input type="password" name="vip_password"/>
+							</div>
+						    </div>
+						    <div class="control-group">
+							<div class="controls">
+							    <button type="submit" class="btn">支付订票</button>
+							</div>
+						    </div>
+					    </fieldset>
+			    	</form>
 		    </div>
 		</div>
 		<div id="rightbox">
@@ -239,18 +240,17 @@
 				<div class="tab-content">
 				    <div id="tab1" class="tab-pane active">
 				    <input  type="hidden" name="ways" value="simple"/>
-					<form class="bigForm">
 					    <div class="begin">
 						<label>出发城市</label>
-						<input class="input-small" type="text" name="from_city"> 
+						<input class="input-small" type="text" name="from_city"/> 
 					    </div>
 					    <div class="arrive">
 						<label>到达城市</label>
-						<input class="input-small" type="text" name="to_city">
+						<input class="input-small" type="text" name="to_city"/>
 					    </div>
 					    <div class="date">
 						<label>出发日期</label>
-						<input class="input-small" type="date" name="from_time">
+						<input class="input-small" type="date" name="from_time"/>
 					    </div>
 					    <div>
 						<table class="table">
@@ -293,22 +293,20 @@
 								    <option>4</option>
 								    <option>5</option>
 								    <option>6</option>
+								</select>
 							    </td>
 							</tr>
 						    </tbody>
 						</table>
 						<div>
-						    <a data-trigger="hover" data-placement="left" data-original-title="儿童婴儿票价说明" href="#" rel="popover" data-content="开始旅行之日已满两周岁、未满12周岁的儿童按同行成人普通票价的50%付费，提供座位；无成人陪伴儿童票价另有规定。开始旅行之日未满两周岁的婴儿按同行成人普通票价的10%付费，不提供座位。每一成人旅客只能有一个婴儿享受这种票价，如需要单独占用座位时，应购买儿童票。">查看儿童、婴儿票价说明&#187</a>
+						    <a data-trigger="hover" data-placement="left" data-original-title="儿童婴儿票价说明" href="#" rel="popover" data-content="开始旅行之日已满两周岁、未满12周岁的儿童按同行成人普通票价的50%付费，提供座位；无成人陪伴儿童票价另有规定。开始旅行之日未满两周岁的婴儿按同行成人普通票价的10%付费，不提供座位。每一成人旅客只能有一个婴儿享受这种票价，如需要单独占用座位时，应购买儿童票。">查看儿童、婴儿票价说明&#187;</a>
 						</div>
 					    </div>
 					    <div class="controls">
-						<button class="btn btn-primary" type="submit" >重新查询</button>
+							<button class="btn btn-primary" type="submit" >重新查询</button>
 					    </div>
-					</form>
 				    </div>
 				<div id="tab2" class="tab-pane">
-					<form class="bigForm" action="queryticket.action" method="post">
-					<input  type="hidden" name="ways" value="double"/>
 					    <div class="begin">
 						<label>出发城市</label>
 						<input class="input-small" type="text" name="from_city">
@@ -331,7 +329,7 @@
 							<tr>
 							    <th>成人(≥12)</th>
 							    <th>儿童(2-12)</th>
-							    <th>婴儿(&#60 2)</th>
+							    <th>婴儿(&#60; 2)</th>
 							</tr>
 						    </thead>
 						    <tbody>
@@ -384,21 +382,18 @@
 					    <div class="controls">
 						<button class="btn btn-primary" type="submit">重新查询</button>
 					    </div>
-					</form>
 				    </div>
 				</div>
 			    </div>
+			</form>
 			</div>
 		<div id="footer">
 			<hr>
 		    <footer>
-				<p>&#169 Company 2012</p>
+				<p>&#169; Company 2012</p>
 		    </footer>
 		</div>
-	</div>
-
-
-		    
+	</div>		    
 		    <!-- log in -->
 			<div class="modal hide fade in" id="logIn">
 				<div class="modal-header">
@@ -415,9 +410,9 @@
 								</div>
 							</div>
 							<div class="control-group">
-								<label class="control-label" for="input01">密码</label>
+								<label class="control-label" for="passwd01">密码</label>
 								<div class="controls">
-									<input id="input01" type="password" name="" placeholder="密码">
+									<input id="passwd01" type="password" name="" placeholder="密码">
 								</div>
 							</div>
 							<div class="control-group">
@@ -442,21 +437,21 @@
 					<form class="form-horizontal">
 						<fieldset>
 							<div class="control-group">
-								<label class="control-label" for="input01">用户名</label>
+								<label class="control-label" for="input02">用户名</label>
 								<div class="controls">
-									<input id="input01" type="text" name="" placeholder="用户名">
+									<input id="input02" type="text" name="" placeholder="用户名">
 								</div>
 							</div>
 							<div class="control-group">
-								<label class="control-label" for="input01">手机号码</label>
+								<label class="control-label" for="phonename">手机号码</label>
 								<div class="controls">
-									<input id="input01" type="password" name="" placeholder="手机号码">
+									<input id="phonename" type="password" name="" placeholder="手机号码">
 								</div>
 							</div>
 							<div class="control-group">
-								<label class="control-label" for="input01">密码</label>
+								<label class="control-label" for="password02">密码</label>
 								<div class="controls">
-									<input id="input01" type="password" name="" placeholder="密码">
+									<input id="password02" type="password" name="" placeholder="密码">
 								</div>
 							</div>
 							<div class="control-group">
