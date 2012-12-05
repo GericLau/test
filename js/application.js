@@ -47,15 +47,18 @@ $(function(){
     /* disable */
     var all = $("input#all");
     $("input#disabledInput").attr("disabled",false);
+    $("input#disabledInput2").attr("disabled",false);
     all.click(function(){
       $("input#disabledInput").attr("disabled",false);
-      $("input#disabledInput2").attr("disabled",true);
+      $("input#disabledInput2").attr("disabled",false);
+      $("input#disabledInput3").attr("disabled",true);
     });
     
     var single =$("input#single");
     single.click(function(){
-      $("input#disabledInput2").attr("disabled",false);
+      $("input#disabledInput2").attr("disabled",true);
       $("input#disabledInput").attr("disabled",true);
+      $("input#disabledInput3").attr("disabled",false);
     })
 
 });
